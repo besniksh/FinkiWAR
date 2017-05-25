@@ -15,7 +15,7 @@ namespace FinkiWAR
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FinkiWAR());
+            Application.Run(new Welcome());
         }
     }
 }
