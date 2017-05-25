@@ -33,6 +33,7 @@ namespace FinkiWAR
             timer.Start();
             DoubleBuffered = true;
             scene.AddAirPlane();
+            highscore = new HighScore();
         }
 
         
@@ -46,11 +47,11 @@ namespace FinkiWAR
                 int y = -Enemy.RADIUS;
                 scene.AddBall(new Point(x, y));
                 lblScore.Text = string.Format("Score : {0}", scene.killedBalls.ToString());
+                highscore.score = scene.killedBalls;
             }
             if (scene.finish)
             {
                 timer.Stop();
-                highscore = new HighScore();
                 highscore.score = scene.killedBalls;
                 DialogResult = System.Windows.Forms.DialogResult.OK;
                 string Message = string.Format("        GAME OVER!! \n\n Your killed {0} enemies!! \n You reached level : {1}", scene.killedBalls.ToString(), level);
