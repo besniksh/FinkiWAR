@@ -19,6 +19,7 @@ namespace FinkiWAR
         private Random random;
         private Timer timer;
         private int level;
+        public HighScore highscore;
         public FinkiWAR()
         {
             InitializeComponent();
@@ -49,6 +50,9 @@ namespace FinkiWAR
             if (scene.finish)
             {
                 timer.Stop();
+                highscore = new HighScore();
+                highscore.score = scene.killedBalls;
+                DialogResult = System.Windows.Forms.DialogResult.OK;
                 string Message = string.Format("        GAME OVER!! \n\n Your killed {0} enemies!! \n You reached level : {1}", scene.killedBalls.ToString(), level);
                 MessageBox.Show(Message);
             }
