@@ -29,7 +29,7 @@ namespace FinkiWAR
             InitializeComponent();
             highscore = 0;
             score = 0;
-            lblAuthors.Text = "";
+            lblAuthors.Text = " ";
             lblRecord.Text = string.Format("Highscore : {0}", highscore);
         }
         /// <summary>
