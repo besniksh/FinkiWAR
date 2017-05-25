@@ -5,8 +5,12 @@ using System.Text;
 
 namespace FinkiWAR
 {
+    
     public class HighScore
     {
+        /// <summary>
+        /// Најмногу пукнати непријатели
+        /// </summary>
         public int score;
 
         public override string ToString()

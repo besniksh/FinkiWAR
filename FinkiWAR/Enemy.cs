@@ -8,12 +8,20 @@ namespace FinkiWAR
 {
     public class Enemy : Shape
     {
+        /// <summary>
+        /// Големината на Непријателот
+        /// </summary>
         public static readonly int RADIUS = 30;
-
+        
+        /// <summary>
+        /// Боја на непријателот од рандом број 0 ,1 или 2
+        /// </summary>
         public int ColorRnd { get; set; }
 
+        /// <summary>
+        /// Бризината на непријателот
+        /// </summary>
         public int speed { get; set; }
-        public int hits { get; set; }
         public Enemy(int speed)
         {
             Random r = new Random();
@@ -21,11 +29,18 @@ namespace FinkiWAR
             this.speed = speed;
         }
 
+        /// <summary>
+        /// Движење на непријателот надоле
+        /// </summary>
         public void Move()
         {
             Position = new Point(Position.X, Position.Y + speed);
         }
 
+        /// <summary>
+        /// Цртање на Непријателот
+        /// </summary>
+        /// <param name="g"></param>
         public void Draw(Graphics g)
         {
             Brush b = null;
@@ -46,6 +61,11 @@ namespace FinkiWAR
 
         }
 
+        /// <summary>
+        /// Ако Непријателот стигне до доле без да биде пукнат
+        /// </summary>
+        /// <param name="height"></param>
+        /// <returns></returns>
         public bool OutOfBounds(int height)
         {
             if (Position.Y - RADIUS > height-100) return true;

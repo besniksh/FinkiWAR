@@ -12,13 +12,43 @@ using System.Runtime.Serialization;
 
 namespace FinkiWAR
 {
+    /// <summary>
+    /// Форма каде се појава играта
+    /// </summary>
     public partial class FinkiWAR : Form
     {
+        /// <summary>
+        /// Сцена каде се движаат непријателите и Авионот
+        /// </summary>
         private Scene scene;
+
+        /// <summary>
+        /// Додавање на непријатели
+        /// </summary>
         private int generateBall;
+
+        /// <summary>
+        /// Рандом место за појава на непријателот
+        /// </summary>
         private Random random;
+
+        /// <summary>
+        /// Тајмер за брзината на генерирање на непријатели
+        /// </summary>
         private Timer timer;
+
+        /// <summary>
+        /// Левели после пукнати неколку непријатели
+        /// </summary>
+        /// 
         private int level;
+
+        /// <summary>
+        /// Најмногу пукнати непријатели
+        /// Играта започнува на Левел 1
+        /// Интервалот за генерирање непријатели е 100милисекунди
+        /// Додавање на авионот во сцена
+        /// </summary>
         public HighScore highscore;
         public FinkiWAR()
         {
@@ -36,11 +66,14 @@ namespace FinkiWAR
             highscore = new HighScore();
         }
 
-        
+        /// <summary>
+        /// Се што треба да се прави по секоја 100 милисекунда.
+        /// Сума на пукнати непријатели
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void timer_Tick(object sender, EventArgs e)
-
         {
-
             if (generateBall % 10 == 0)
             {
                 int x = random.Next(2 * Enemy.RADIUS, Width - (Enemy.RADIUS * 2));
@@ -70,7 +103,12 @@ namespace FinkiWAR
         }
 
 
-
+        /// <summary>
+        /// По претискување на копчето десно или лево  авионот се движе на таа насока
+        /// По претискување на копчето SPACE се пука од авинот на кај непријателите
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
              if (e.KeyCode == Keys.Left)
@@ -91,7 +129,12 @@ namespace FinkiWAR
         }
 
 
-
+        /// <summary>
+        /// Во статус-бар се појавува Левелот и брзината на која доаѓаат непријателите
+        /// По секој 10 пукнати непријателите Левелот се зголемува за 1 , а брзината за 100km/h
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void statusStrip1_Paint_1(object sender, PaintEventArgs e)
         {
             level = scene.killedBalls / 10 + 1;
