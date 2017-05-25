@@ -34,8 +34,9 @@ namespace FinkiWAR
             if (score > highscore)
             {
                 highscore = score;
-                lblRecord.Text = string.Format("Highscore : {0}", highscore);
+                
             }
+            lblRecord.Text = string.Format("Highscore : {0}", highscore);
         }
 
         

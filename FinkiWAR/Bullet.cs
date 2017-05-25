@@ -7,9 +7,16 @@ namespace FinkiWAR
 {
     public class Bullet : Shape
     {
+        
+        /// <summary>
+        /// Големината на коршумот
+        /// </summary>
         public static readonly int RADIUS = 5;
 
-        
+        /// <summary>
+        /// Цртање на коршум
+        /// </summary>
+        /// <param name="g"></param>
         public void Draw(Graphics g)
         {
             Brush b = new SolidBrush(Color.Yellow);
@@ -17,9 +24,12 @@ namespace FinkiWAR
             b.Dispose();
         }
 
+       /// <summary>
+       ///  Движење на куршуми кон непријатели
+       /// </summary>
         public void Move()
         {
-            Position = new Point(Position.X, Position.Y - 10);
+            Position = new Point(Position.X, Position.Y - 20);
         }
 
     }
