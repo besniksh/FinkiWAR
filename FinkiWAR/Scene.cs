@@ -51,7 +51,7 @@ namespace FinkiWAR
 
         public void PlayBulletSound()
         {
-            SoundPlayer bulletSound = new SoundPlayer(@"C:\Users\besni\Desktop\bullet.wav");
+            SoundPlayer bulletSound = new SoundPlayer(@"bullet.wav");
             bulletSound.Play();
         }
 
