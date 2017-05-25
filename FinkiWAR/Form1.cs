@@ -138,7 +138,14 @@ namespace FinkiWAR
         private void statusStrip1_Paint_1(object sender, PaintEventArgs e)
         {
             level = scene.killedBalls / 10 + 1;
-            scene.speed = level + 5;
+            if (level < 10)
+            {
+                scene.speed = level + 5;
+            }
+            else
+            {
+                scene.speed = level + 1;
+            }
             stsLevel.Text = string.Format("Level : {0} \t Enemies are comming with : {1} km\\h", level , level*100 );
         }
     }
