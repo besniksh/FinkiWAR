@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.lblAuthors = new System.Windows.Forms.Label();
             this.lblRecord = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -55,15 +54,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lblAuthors
-            // 
-            this.lblAuthors.AutoSize = true;
-            this.lblAuthors.Location = new System.Drawing.Point(320, 174);
-            this.lblAuthors.Name = "lblAuthors";
-            this.lblAuthors.Size = new System.Drawing.Size(53, 13);
-            this.lblAuthors.TabIndex = 2;
-            this.lblAuthors.Text = "lblAuthors";
-            // 
             // lblRecord
             // 
             this.lblRecord.AutoSize = true;
@@ -81,7 +71,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 208);
             this.Controls.Add(this.lblRecord);
-            this.Controls.Add(this.lblAuthors);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "Welcome_FinkiWAR";
@@ -95,7 +84,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label lblAuthors;
         private System.Windows.Forms.Label lblRecord;
     }
 }

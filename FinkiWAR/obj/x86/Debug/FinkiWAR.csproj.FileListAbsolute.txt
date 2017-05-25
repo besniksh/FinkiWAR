@@ -14,3 +14,12 @@ C:\Users\besni\onedrive\documents\visual studio 2010\Projects\FinkiWAR\FinkiWAR\
 C:\Users\besni\onedrive\documents\visual studio 2010\Projects\FinkiWAR\FinkiWAR\obj\x86\Debug\FinkiWAR.csprojResolveAssemblyReference.cache
 C:\Users\besni\onedrive\documents\visual studio 2010\Projects\FinkiWAR\FinkiWAR\obj\x86\Debug\FinkiWAR.FinkiWAR.resources
 C:\Users\besni\onedrive\documents\visual studio 2010\Projects\FinkiWAR\FinkiWAR\obj\x86\Debug\FinkiWAR.Welcome_FinkiWAR.resources
+C:\Users\besni\Desktop\project\FinkiWAR\FinkiWAR\obj\x86\Debug\FinkiWAR.exe
+C:\Users\besni\Desktop\project\FinkiWAR\FinkiWAR\obj\x86\Debug\FinkiWAR.pdb
+C:\Users\besni\Desktop\project\FinkiWAR\FinkiWAR\obj\x86\Debug\FinkiWAR.csprojResolveAssemblyReference.cache
+C:\Users\besni\Desktop\project\FinkiWAR\FinkiWAR\obj\x86\Debug\FinkiWAR.FinkiWAR.resources
+C:\Users\besni\Desktop\project\FinkiWAR\FinkiWAR\obj\x86\Debug\FinkiWAR.Properties.Resources.resources
+C:\Users\besni\Desktop\project\FinkiWAR\FinkiWAR\obj\x86\Debug\FinkiWAR.Welcome_FinkiWAR.resources
+C:\Users\besni\Desktop\project\FinkiWAR\FinkiWAR\obj\x86\Debug\FinkiWAR.csproj.GenerateResource.Cache
+C:\Users\besni\Desktop\project\FinkiWAR\FinkiWAR\bin\Debug\FinkiWAR.exe
+C:\Users\besni\Desktop\project\FinkiWAR\FinkiWAR\bin\Debug\FinkiWAR.pdb
